@@ -19,8 +19,12 @@ jobs:
       - name: Debug 1
         run: |
           which python
+          python --version
           which pip
+          pip --version
+          python -m pip --version
           which pipenv || true
+          echo $PATH
       - name: Install pipenv
         run: |
           sudo pip install pipenv
@@ -28,10 +32,11 @@ jobs:
         run: |
           which python
           which pip
-          which pipenv || true
+          which pipenv
+          pipenv --version
       - name: Install dependencies
         run: |
-          pipenv install --dev --deploy
+          pipenv --python /usr/bin/python install --dev --deploy
       - name: Test with pytest
         run: |
           python -m pipenv run pytest
