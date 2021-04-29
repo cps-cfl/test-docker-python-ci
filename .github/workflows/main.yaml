@@ -20,7 +20,7 @@ jobs:
         run: |
           which python
           which pip
-          which pipenv
+          which pipenv || true
       - name: Install pipenv
         run: |
           pip install pipenv
@@ -28,7 +28,7 @@ jobs:
         run: |
           which python
           which pip
-          which pipenv
+          which pipenv || true
       - name: Install dependencies
         run: |
           python -m pipenv install --dev --deploy
