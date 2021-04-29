@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "415e9d075896bc0c64d6b12b3a291b96eac28635481dc4d43f11484433a4ce68"
+            "sha256": "ef3dadf1c8e03889a7459582cf5bddad6cc559fe40a25b2bdb6cf28bbd13f2f2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -68,6 +68,10 @@
             ],
             "index": "pypi",
             "version": "==1.5.6"
+        },
+        "e1839a8": {
+            "editable": true,
+            "path": "."
         },
         "importlib-metadata": {
             "hashes": [
