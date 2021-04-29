@@ -24,4 +24,10 @@ jobs:
           pipenv install --dev --deploy
       - name: Test with pytest
         run: |
-          python -m pipenv run pytest
+          python-m pipenv run pytest
+      - name: Login to CoreFiling docker
+        uses: docker/login-action@v1
+        with:
+          registry: docker.corefiling.com
+          username: ${{ secrets.CFL_DOCKER_USERNAME }}
+          password: ${{ secrets.CFL_DOCKER_PASSWORD }}
