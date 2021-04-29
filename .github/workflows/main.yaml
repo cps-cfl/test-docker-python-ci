@@ -25,6 +25,7 @@ jobs:
           python -m pip --version
           which pipenv || true
           echo $PATH
+          find -name python
       - name: Install pipenv
         run: |
           sudo pip install pipenv
