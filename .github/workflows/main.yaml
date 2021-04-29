@@ -28,7 +28,7 @@ jobs:
           find -name python
       - name: Install pipenv
         run: |
-          sudo pip install pipenv
+          pip install pipenv
       - name: Debug 2
         run: |
           which python
