@@ -23,7 +23,7 @@ jobs:
           which pipenv || true
       - name: Install pipenv
         run: |
-          pip install pipenv
+          sudo pip install pipenv
       - name: Debug 2
         run: |
           which python
