@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 requests = "*"
-helloworld = {editable = true, path = "."}
 
 [dev-packages]
 autopep8 = "*"
