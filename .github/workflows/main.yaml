@@ -16,12 +16,22 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python.version }}
+      - name: Debug 1
+        run: |
+          which python
+          which pip
+          which pipenv
       - name: Install pipenv
         run: |
           pip install pipenv
+      - name: Debug 2
+        run: |
+          which python
+          which pip
+          which pipenv
       - name: Install dependencies
         run: |
-          pipenv install --dev --deploy
+          python -m pipenv install --dev --deploy
       - name: Test with pytest
         run: |
-          pipenv run pytest
+          python -m pipenv run pytest
