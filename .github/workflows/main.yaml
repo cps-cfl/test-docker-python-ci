@@ -4,6 +4,7 @@ on: push
 
 jobs:
   build:
+    environment: CFL_DOCKER
     runs-on: ubuntu-latest
     strategy:
       matrix:
