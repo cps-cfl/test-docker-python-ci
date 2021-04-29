@@ -37,7 +37,7 @@ jobs:
           pipenv --version
       - name: Install dependencies
         run: |
-          pipenv --python /usr/bin/python install --dev --deploy
+          pipenv install --dev --deploy
       - name: Test with pytest
         run: |
           python -m pipenv run pytest
