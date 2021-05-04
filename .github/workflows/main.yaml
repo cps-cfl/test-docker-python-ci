@@ -50,4 +50,4 @@ jobs:
           cat requirements.txt
       - name: Build docker image
         run: |
-          docker build . -t docker.corefiling.com/helloworld:$GITHUB_RUN_NUMBER -t docker.corefiling.com/helloworld:latest
+          docker build . -t docker.corefiling.com/helloworld:$GITVERSION_SEMVER -t docker.corefiling.com/helloworld:latest
